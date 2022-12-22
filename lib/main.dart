@@ -27,6 +27,9 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(title: const Text("Carnet de Note")),
+      //o sa in viitor text custom
+    );
   }
 }
