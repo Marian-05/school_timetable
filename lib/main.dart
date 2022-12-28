@@ -28,7 +28,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("mmmm")),
+      appBar: AppBar(title: const Text("dadada")),
       //o sa in viitor text custom
     );
   }
