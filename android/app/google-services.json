@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483321681616",
+    "firebase_url": "https://aaaaaaaaaaaaa-eeb40-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "aaaaaaaaaaaaa-eeb40",
+    "storage_bucket": "aaaaaaaaaaaaa-eeb40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483321681616:android:00ebb014cf27af8ba1f0d5",
+        "android_client_info": {
+          "package_name": "com.example.school_timetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483321681616-us2e83jp64lb6siaotr7ct26irkj95br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKq_AZe7SbSLhl-BKVjIGkRwigXQ00P_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483321681616-us2e83jp64lb6siaotr7ct26irkj95br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
