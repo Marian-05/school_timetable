@@ -10,8 +10,8 @@ class WelcomePage extends StatefulWidget {
 class WelcomePageState extends State<WelcomePage> {
   List images = [
     "poza1.jpg"
-    //   "poza2.jpg"
-    //  "poza3.jpg"
+        "poza2.jpg"
+        "poza3.jpg"
   ];
   @override
   Widget build(BuildContext context) {
