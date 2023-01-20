@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:school_timetable/app/profile.dart';
 import 'package:school_timetable/app/search.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -25,18 +25,21 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
         body: pages[curent_index],
         bottomNavigationBar: BottomNavigationBar(
-            // type: BottomNavigationBarType.shifting,
+            type: BottomNavigationBarType.shifting,
+            selectedItemColor: Colors.black,
+            unselectedItemColor: Colors.grey.withOpacity(0.5),
             onTap: OnTap,
             currentIndex: curent_index,
-            // showSelectedLabels: false,
-            // showUnselectedLabels: false,
+            unselectedFontSize: 0,
+            selectedFontSize: 0,
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
             items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.abc_sharp), label: "Home"),
+                  icon: Icon(Icons.search), label: "Search"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.abc_sharp), label: "Search"),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.abc_sharp), label: "Profile"),
+                  icon: Icon(Icons.person), label: "Profile"),
             ]));
   }
 }
