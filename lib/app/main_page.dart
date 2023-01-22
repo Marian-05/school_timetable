@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:school_timetable/app/profile.dart';
 import 'package:school_timetable/app/search.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'home_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -13,25 +12,25 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   List pages = [const HomePage(), const SearchPage(), const ProfilePage()];
-  int curent_index = 0;
-  void OnTap(index) {
+  int curentIndex = 0;
+  void onTap(index) {
     setState(() {
-      curent_index = index;
+      curentIndex = index;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: pages[curent_index],
+        body: pages[curentIndex],
         bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.shifting,
             selectedItemColor: Colors.black,
             unselectedItemColor: Colors.grey.withOpacity(0.5),
-            onTap: OnTap,
-            currentIndex: curent_index,
-            unselectedFontSize: 0,
-            selectedFontSize: 0,
+            onTap: onTap,
+            currentIndex: curentIndex,
+            // unselectedFontSize: 0,
+            // selectedFontSize: 0,
             showSelectedLabels: false,
             showUnselectedLabels: false,
             items: const [

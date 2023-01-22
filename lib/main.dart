@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:school_timetable/app/home_page.dart';
 import 'package:school_timetable/app/main_page.dart';
 import 'package:school_timetable/files.dart/welcome.dart';
 import 'firebase_options.dart';
