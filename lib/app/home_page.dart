@@ -70,17 +70,20 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             height: 300,
             child: TabBarView(controller: tb, children: [
               ListView.builder(
-                itemCount: 2,
+                itemCount: 3,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    width: 1000,
-                    height: 2000,
-                    decoration: const BoxDecoration(
-                      // borderRadius: BorderRadius.circular(100),
-                      image: DecorationImage(
-                        image: AssetImage("images/poza1.jpg"),
-                        // fit: BoxFit.cover
+                  return Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Container(
+                      width: 200,
+                      //height: 0,
+                      decoration: const BoxDecoration(
+                        // borderRadius: BorderRadius.circular(100),
+                        image: DecorationImage(
+                          image: AssetImage("images/poza1.jpg"),
+                          // fit: BoxFit.cover
+                        ),
                       ),
                     ),
                   );
