@@ -11,7 +11,11 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List pages = [const HomePage(), const SearchPage(), const ProfilePage()];
+  List pages = [
+    const HomePage(),
+    const AfisareRestaurante(),
+    const ProfilePage()
+  ];
   int curentIndex = 0;
   void onTap(index) {
     setState(() {
