@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AfisareRestaurante extends StatefulWidget {
   const AfisareRestaurante({super.key});
@@ -46,14 +47,33 @@ class AfisareRestauranteState extends State<AfisareRestaurante> {
             Positioned(
                 top: 240,
                 child: Container(
-                    height: 500,
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, top: 20),
+                    height: 550,
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
                         color: Colors.blue[200],
                         borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30),
-                        ))))
+                        )),
+                    child: Column(
+                      children: [
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("sdf6",
+                                  style: GoogleFonts.actor(
+                                    fontSize: 30,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.italic,
+                                  )),
+                              Text("2dolari",
+                                  style: GoogleFonts.abrilFatface(
+                                      fontSize: 20, color: Colors.black)),
+                            ])
+                      ],
+                    ))),
           ])),
     );
   }
