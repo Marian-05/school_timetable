@@ -71,7 +71,41 @@ class AfisareRestauranteState extends State<AfisareRestaurante> {
                               Text("2dolari",
                                   style: GoogleFonts.abrilFatface(
                                       fontSize: 20, color: Colors.black)),
-                            ])
+                            ]),
+                        Row(
+                          children: [
+                            const Padding(
+                                padding: EdgeInsets.fromLTRB(10, 50, 0, 0)),
+                            Text("People",
+                                style: GoogleFonts.almendraSc(
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                )),
+                          ],
+                        ),
+                        const SizedBox(height: 1),
+                        Row(
+                          children: [
+                            Text("All from Romania",
+                                style: GoogleFonts.annieUseYourTelescope(
+                                    fontSize: 22, fontWeight: FontWeight.w100))
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        Wrap(
+                          children: List.generate(5, (index) {
+                            return Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: Container(
+                                  height: 60,
+                                  width: 60,
+                                  decoration: BoxDecoration(
+                                      color: Colors.black12,
+                                      borderRadius: BorderRadius.circular(15))),
+                            );
+                          }),
+                        )
                       ],
                     ))),
           ])),
