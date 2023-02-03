@@ -49,7 +49,7 @@ class AfisareRestauranteState extends State<AfisareRestaurante> {
                 child: Container(
                     padding:
                         const EdgeInsets.only(left: 20, right: 20, top: 20),
-                    height: 550,
+                    height: 600,
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
                         color: Colors.blue[200],
